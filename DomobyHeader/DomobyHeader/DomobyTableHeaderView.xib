@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SF-UI-Display-Light.otf">
+            <string>SFUIDisplay-Light</string>
+            <string>SFUIDisplay-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DomobyTableHeaderView" customModule="Domoby" customModuleProvider="target">
+            <connections>
+                <outlet property="imageViewHeader" destination="VOi-0t-rGs" id="Y7N-re-EG8"/>
+                <outlet property="imageViewLogo" destination="IKy-lL-wcD" id="eqA-Ek-i78"/>
+                <outlet property="message" destination="qwS-BA-CtS" id="ShC-4K-nRW"/>
+                <outlet property="title" destination="id2-XR-lu9" id="jIw-7c-Ok3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="oVU-i7-M9x">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ptv-J8-RQk" userLabel="Header view">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VOi-0t-rGs" userLabel="Header image">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="140" id="Z2n-rG-Qlh"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="Qti-UR-F2r"/>
+                        <constraint firstAttribute="trailing" secondItem="VOi-0t-rGs" secondAttribute="trailing" id="gzy-jq-isZ"/>
+                        <constraint firstItem="VOi-0t-rGs" firstAttribute="leading" secondItem="Ptv-J8-RQk" secondAttribute="leading" id="mi7-F5-7Q5"/>
+                        <constraint firstItem="VOi-0t-rGs" firstAttribute="top" secondItem="Ptv-J8-RQk" secondAttribute="top" id="t88-Gk-ztT"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="IKy-lL-wcD" userLabel="Profile image">
+                    <rect key="frame" x="110" y="90" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="6U9-kt-bb3"/>
+                        <constraint firstAttribute="height" constant="100" id="V3u-LP-EO2"/>
+                        <constraint firstAttribute="width" secondItem="IKy-lL-wcD" secondAttribute="height" multiplier="1:1" id="fSO-7b-di4"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="sportproof" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id2-XR-lu9" userLabel="profile name">
+                    <rect key="frame" x="20" y="200" width="280" height="34"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="SYV-CR-Jfo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="28"/>
+                    <color key="textColor" red="0.20997596153846154" green="0.20997596153846154" blue="0.20997596153846154" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Купи самсунг" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwS-BA-CtS" userLabel="profile description">
+                    <rect key="frame" x="20" y="237" width="280" height="18"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="lK1-FM-oQu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="14"/>
+                    <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qwS-BA-CtS" secondAttribute="trailing" constant="20" id="0ZM-Lc-kDG"/>
+                <constraint firstAttribute="trailing" secondItem="id2-XR-lu9" secondAttribute="trailing" constant="20" id="1gu-i4-4NX"/>
+                <constraint firstItem="id2-XR-lu9" firstAttribute="top" secondItem="IKy-lL-wcD" secondAttribute="bottom" constant="10" id="1mk-JI-gJb"/>
+                <constraint firstItem="Ptv-J8-RQk" firstAttribute="top" secondItem="oVU-i7-M9x" secondAttribute="top" id="3Wg-Wk-rqg"/>
+                <constraint firstAttribute="bottom" secondItem="qwS-BA-CtS" secondAttribute="bottom" constant="25" id="878-L6-srO"/>
+                <constraint firstItem="IKy-lL-wcD" firstAttribute="centerX" secondItem="oVU-i7-M9x" secondAttribute="centerX" id="87I-ol-Pu0"/>
+                <constraint firstItem="qwS-BA-CtS" firstAttribute="top" secondItem="id2-XR-lu9" secondAttribute="bottom" constant="3" id="ACG-pb-9As"/>
+                <constraint firstItem="qwS-BA-CtS" firstAttribute="leading" secondItem="oVU-i7-M9x" secondAttribute="leading" constant="20" id="GZj-10-1bF"/>
+                <constraint firstItem="id2-XR-lu9" firstAttribute="top" secondItem="Ptv-J8-RQk" secondAttribute="bottom" constant="60" id="NiM-wa-5dG"/>
+                <constraint firstAttribute="trailing" secondItem="Ptv-J8-RQk" secondAttribute="trailing" id="W2M-fs-OcX"/>
+                <constraint firstItem="Ptv-J8-RQk" firstAttribute="leading" secondItem="oVU-i7-M9x" secondAttribute="leading" id="p0C-ht-qlr"/>
+                <constraint firstItem="id2-XR-lu9" firstAttribute="leading" secondItem="oVU-i7-M9x" secondAttribute="leading" constant="20" id="veS-qf-xUh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="536" y="346"/>
+        </view>
+    </objects>
+</document>
